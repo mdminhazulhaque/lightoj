@@ -10,12 +10,14 @@ int main()
 {
     ios::sync_with_stdio(false);
 
-    long long int n, caseno = 0, cases, fn[10005];
+    int caseno = 0, cases;
 
     cin >> cases;
 
     while(cases--)
     {
+        long long int n, fn[10005];
+        
         cin >> fn[0] >> fn[1] >> fn[2] >> fn[3] >> fn[4] >> fn[5] >> n;
 
         for(int i=6; i<=n; i++)
