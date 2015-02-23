@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <fstream>
+#include <cstdlib>
 
 #define eol "\n"
 #define space " "
@@ -36,7 +37,7 @@ int main()
 
         int area = Ax*(By-Cy) + Bx*(Cy-Ay) + Cx*(Ay-By);
 
-        cout << "Case " << ++caseno << ": " << Dx << space << Dy << space << area << eol;
+        cout << "Case " << ++caseno << ": " << Dx << space << Dy << space << abs(area) << eol;
     }
 
     return 0;
